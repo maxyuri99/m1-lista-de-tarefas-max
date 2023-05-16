@@ -78,7 +78,7 @@ btnSubmit.addEventListener('click', function (event) {
   let priority = document.querySelector("#input_priority");
 
   if (title.value === "") {
-    alert("O Título não pode estar vazio");
+    alert("O Titulo não pode estar vazio");
   } else {
     tasks.push({
       titulo: title.value,
