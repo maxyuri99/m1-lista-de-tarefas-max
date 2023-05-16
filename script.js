@@ -77,10 +77,14 @@ btnSubmit.addEventListener('click', function (event) {
   let title = document.querySelector("#input_title");
   let priority = document.querySelector("#input_priority");
 
-  tasks.push({
-    titulo: title.value,
-    tipo: priority.value,
-  });
+  if (title.value === "") {
+    alert("O Título não pode estar vazio");
+  } else {
+    tasks.push({
+      titulo: title.value,
+      tipo: priority.value,
+    });
+  }
 
   title.value = "";
   priority.value = "Urgente";
